@@ -68,3 +68,77 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+============================================== Details Regarding Push ++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+PS E:\React Projects\react_practice> git commit -m "my commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        README.md
+        package-lock.json
+        public/
+        src/
+
+nothing added to commit but untracked files present (use "git add" to track)PS 
+E:\React Projects\react_practice>    git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+PS E:\React Projects\react_practice>  git push --set-upstream origin master    
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Admiralsourav/react_practice.git'
+PS E:\React Projects\react_practice> git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Admiralsourav/react_pracPS E:\React Projects\react_practice> git init
+PS E:\React Projects\react_practice> git add .
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in package-lock.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in package.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in public/index.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in public/manifest.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in public/robots.txt.
+The file will have its original line endings in your working directory
+PS E:\React Projects\react_practice> git commit -m "First Commit"
+[master (root-commit) 8ddbb36] First Commit
+ 14 files changed, 28449 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 README.md
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 public/favicon.ico
+ create mode 100644 public/index.html
+ create mode 100644 public/logo192.png
+ create mode 100644 public/logo512.png
+ create mode 100644 public/manifest.json
+ create mode 100644 public/robots.txt
+ create mode 100644 src/App.js
+ create mode 100644 src/Counter.js
+ create mode 100644 src/Login.jsx
+ create mode 100644 src/index.js
+PS E:\React Projects\react_practice> git remote add origin https://github.com/Admiralsourav/react_practice.git
+error: remote origin already exists.
+PS E:\React Projects\react_practice> git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (18/18), 286.71 KiB | 4.28 MiB/s, done.
+Total 18 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Admiralsourav/react_practice.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
